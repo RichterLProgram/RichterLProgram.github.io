@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>RBS Dashboard</title>
+      <link rel="stylesheet" href="styles.css">
+      <!-- Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>Dashboard</title>
+   </head>
+   <body onload="printBtn()">
+      <div class="topnav">
+         <a href="#home">Mensa</a>
+         <a href="#news">Sekretariat</a>
+         <a href="#contact">Lernfabrik</a>
+      </div>
+      <div class="navwrapper">
+         <a href="index.html">
+         <img class="logo" src="Pictures/rbslogo.jpeg" alt="">
+         </a>
+         <div class="nav">
+            <a class="active" ahref="spiel.html">Spiel</a>
+            <a href="#news">Arbeitsmaterial</a>
+            <a href="#contact">File Converter</a>
+            <a href="#about">Notenpunkte Rechner</a>
+         </div>
+      </div>
+      <img src="Pictures/bar.png" alt="" class="bar">
+      <div class="TopContainer">
+         <div class="element">
+            <div class="centerConsole">
+               <h1>Dashboard</h1>
+               <div id="dateDiv"></div>
+               <div id="timeDiv"></div>
+               <button id="darkModeButton" class="btn">Farben Invertieren</button>
+               <button id="clearButton" class="btn">Clear Buttons</button>
+            </div>
+         </div>
+         <div class="element">
+            <div class="centerConsole">
+               <h1>Erstelle Button</h1>
+               <div id="tokens"></div>
+               <form>
+                  <label for="buttonName">Button Name:</label>
+                  <input type="text" id="buttonName" name="buttonName" required>
+                  <label for="buttonLink">Button Link:</label>
+                  <input type="text" id="buttonLink" name="buttonLink" required>
+                  <input type="submit" value="Create Button" onclick="createButton(event)">
+               </form>
+               <div id="test"></div>
+            </div>
+         </div>
+         <div class="developer-mode">
+            <div class="element">
+               <div class="centerConsole">
+                  <h1>Dev Mode</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" id="containerB">
+      </div>
+      <button class="hamburger">
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+      </button>
+      <ul class="menu">
+         <li><a class="menuItem" href="#">Spiel</a></li>
+         <li><a class="menuItem" href="#">Arbeitsmaterial</a></li>
+         <li><a class="menuItem" href="#">File Converter</a></li>
+         <li><a class="menuItem" href="#">Notenpunkte Rechner</a></li>
+         <div id="dateDiv"></div>
+      </ul>
+      <div id="game3">
+         <h2>Spielen Sie um Buttons erstellen zu können</h2>
+         <div id="board">
+            <div class="row">
+               <div class="cell"></div>
+               <div class="cell"></div>
+               <div class="cell"></div>
+            </div>
+            <div class="row">
+               <div class="cell"></div>
+               <div class="cell"></div>
+               <div class="cell"></div>
+            </div>
+            <div class="row">
+               <div class="cell"></div>
+               <div class="cell"></div>
+               <div class="cell"></div>
+            </div>
+         </div>
+         <p id="turn"></p>
+         <p id="tokens"></p>
+      </div>
+      <script src="script.js"></script>
+   </body>
+   <footer>
+      <div class="footer-container">
+         <div class="footer-column">
+            <p>Robert-Bosch-Schule Ulm</p>
+            <p>Gewerbliche Schule I</p>
+            <p>Egginger Weg 30</p>
+            <p>89077 Ulm</p>
+            <p>Telefon: 0731 161-3700</p>
+            <p>Fax: 0731 161-1627</p>
+            <p>E-Mail: sekretariat@rbs-ulm.de</p>
+         </div>
+         <div class="footer-column">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">Lernfabrik</a>
+            <a href="#">WebUntis</a>
+            <a href="#">Moodle</a>
+            <a href="#">Sekretariat</a>
+            <a href="#">Mensa</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+         </div>
+      </div>
+      <img src="Pictures/bar.png" alt="" class="barbottom">
+   </footer>
+</html>

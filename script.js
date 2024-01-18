@@ -276,6 +276,14 @@ function printBtn() {
    }
 }
 
+   setCookie("listBtn", JSON.stringify(["Moodle", "Mail", "Cloud", "Intranet"]));
+   setCookie("listLinks", JSON.stringify([
+      "https://ulmlernt.de/",
+      "https://mail.rbs-ulm.de/",
+      "https://cloud.rbs-ulm.de/index.php/login",
+      "https://intranet.rbs-ulm.de/",
+   ]));
+
 function clearLocalStorage() {
    token = getCookie('token');
    deleteAllCookies();
